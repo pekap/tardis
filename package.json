@@ -1,0 +1,36 @@
+{
+  "name": "tardis_website",
+  "version": "0.0.1",
+  "description": "Landing page for 3D scanning company Tardis",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pekap/pekap.github.io.git"
+  },
+  "author": "Petr K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pekap/pekap.github.io/issues"
+  },
+  "homepage": "https://github.com/pekap/pekap.github.io#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "bower": "^1.7.9",
+    "browserify": "^13.0.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-minify": "0.0.11",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}
