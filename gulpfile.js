@@ -111,7 +111,7 @@ gulp.task('reloadHTML', function () {
 gulp.task('watch', ['build'], function () {
     gulp.start(['watchify']);
     gulp.watch(p.watchSCSS, ['styles']);
-    gulp.watch('./index.html', ['reloadHTML']);
+    gulp.watch(['./index.php', './includes/**/*.php'], ['reloadHTML']);
     livereload.listen();
 });
 

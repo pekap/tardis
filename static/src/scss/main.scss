@@ -1,5 +1,7 @@
 @import 'bourbon';
-
-.test {
-    color: red;
-}
+@import '_constants';
+@import '_mixins';
+@import '_base';
+@import '_layout';
+@import '_components';
+@import '_pages';

@@ -1,0 +1,8 @@
+$s-media-md: 800px;
+$s-media-height: 500px;
+
+@mixin media-md {
+    @media (max-width: $s-media-md), (max-height: $s-media-height) {
+        @content;
+    }
+}
