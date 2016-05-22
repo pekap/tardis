@@ -14,6 +14,7 @@ var gulp = require('gulp'),
     minify = require('gulp-minify'),
     bower = require('gulp-bower'),
     sourcemaps = require('gulp-sourcemaps'),
+    livereload = require('gulp-livereload'),
     p = {
         jsx: './static/src/js/app.js',
         bundle: 'app.js',
@@ -64,7 +65,8 @@ gulp.task('styles', function() {
       }).on('error',sass.logError))
       .pipe(cleanCSS({debug:false}))
       .pipe(sourcemaps.write())
-      .pipe(gulp.dest(p.distCSS));
+      .pipe(gulp.dest(p.distCSS))
+      .pipe(livereload());
 });
 
 
@@ -102,9 +104,15 @@ gulp.task('bower', function() {
     .pipe(gulp.dest(p.bowerDir));
 });
 
+gulp.task('reloadHTML', function () {
+    livereload.reload();
+});
+
 gulp.task('watch', ['build'], function () {
     gulp.start(['watchify']);
     gulp.watch(p.watchSCSS, ['styles']);
+    gulp.watch('./index.html', ['reloadHTML']);
+    livereload.listen();
 });
 
 gulp.task('build', ['clean','bower'], function () {
