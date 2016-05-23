@@ -13,6 +13,7 @@
     &__specs {
         max-width: 50em;
         margin: 0 auto;
+        @include transform(translateX(1.5em));
         &__spec {
             width: 30%;
             color: white;
