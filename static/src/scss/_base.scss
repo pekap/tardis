@@ -28,8 +28,7 @@ h1 {
     font-size: 200%;
     line-height: 100%;
     font-weight: 600;
-    letter-spacing: 100%*(0.5/16);
-    font-family: Sintony
+    letter-spacing: 0.05em;
 }
 
 a {
@@ -43,6 +42,7 @@ a {
 .Link-with-underline {
     white-space: nowrap;
     color: inherit;
+    cursor: pointer;
     position: relative;
     font-weight: 500;
 

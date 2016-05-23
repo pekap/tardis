@@ -1,0 +1,24 @@
+.PrimaryCTA {
+    color: white;
+    background: $c-green;
+    padding: 0.8em 1.3em;
+    letter-spacing: 0.02em;
+    font-family: Montserrat;
+    border-radius: 0.2em;
+    cursor: pointer;
+    box-shadow: 0 0.2em 0.4em rgba(0,0,0,0.1);
+
+    @include transition(all 0.3s $t-std-easing);
+
+    &:hover {
+        box-shadow: 0 0.5em 0.8em rgba(0,0,0,0.1);
+        background: darken($c-green, 1%);
+        @include transform(translateY(-0.05em));
+    }
+
+    &:active, &:focus {
+        box-shadow: 0 0.2em 0.4em rgba(0,0,0,0.1);
+        background: darken($c-green, 1%);
+        @include transform(translateY(0));
+    }
+}

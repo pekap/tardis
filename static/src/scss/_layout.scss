@@ -6,3 +6,8 @@ $s-media-height: 500px;
         @content;
     }
 }
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}

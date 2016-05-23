@@ -1,0 +1,64 @@
+.Point {
+    &__icon {
+        position: relative;
+        img {
+            height: 4em;
+            margin-left: -0.3em;
+        }
+
+        &:before {
+            content: '';
+            @include position(absolute, -2em null null -5em);
+            @include size(16em 16em);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    h3 {
+        margin-top: 0.3em;
+        margin-bottom: 0.8em;
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    &--blue, &--green, &--purple {
+        @extend .Point;
+    }
+
+    &--blue {
+        .Point__icon {
+            &:before {
+                @include size(14em 14em);
+                background-image: url('/static/src/img/icons/icon_blue.png');
+            }
+        }
+        h3 {
+            color: $c-blue;
+        }
+    }
+    &--green {
+        .Point__icon {
+            &:before {
+                background-image: url('/static/src/img/icons/icon_green.png');
+            }
+        }
+        h3 {
+            color: $c-green;
+        }
+    }
+    &--purple {
+        .Point__icon {
+            &:before {
+                @include size(14em 14em);
+                background-image: url('/static/src/img/icons/icon_purple.png');
+            }
+        }
+        h3 {
+            color: $c-purple;
+        }
+    }
+}

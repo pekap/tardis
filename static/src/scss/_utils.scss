@@ -1,0 +1,40 @@
+@mixin Flexbox($media) {
+    .fb#{$media} {
+        @include display(flex);
+
+        &--jc {
+            &-c { @include justify-content (center); }
+            &-sb { @include justify-content (space-between); }
+            &-sa { @include justify-content (space-around); }
+            &-fs { @include justify-content (flex-start); }
+            &-fe { @include justify-content (flex-end); }
+        }
+
+        &--ai {
+            &-c { @include align-items (center); }
+            &-bl { @include align-items (baseline); }
+            &-st { @include align-items (stretch); }
+            &-fs { @include align-items (flex-start); }
+            &-fe { @include align-items (flex-end); }
+        }
+
+        &--fd {
+            &-row { @include flex-direction (row); }
+            &-col { @include flex-direction (column); }
+        }
+
+        &--wr {
+            &-wr { @include flex-wrap (wrap); }
+            &-nw { @include flex-wrap (nowrap); }
+        }
+    }
+}
+
+
+
+@include Flexbox("");
+// @include media-ret { @include Flexbox("--m-ret");}
+// @include media-hg { @include Flexbox("--m-hg");}
+// @include media-lg { @include Flexbox("--m-lg");}
+// @include media-md { @include Flexbox("--m-md");}
+// @include media-sm { @include Flexbox("--m-sm");}

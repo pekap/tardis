@@ -1,0 +1,17 @@
+.SectionPartners {
+    background: $c-blue;
+
+    img {
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        height: 3em;
+        padding: 2em 0;
+        opacity: 0.4;
+
+        @include transition(opacity 1s $t-std-easing);
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

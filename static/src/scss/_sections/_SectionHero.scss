@@ -1,0 +1,41 @@
+.SectionHero {
+    background: $c-blue;
+    color: $c-white;
+
+    .inner {
+        min-height: 70vh;
+    }
+
+    &__description {
+        max-width: 30em;
+        @include flex(2);
+
+        h1 {
+            margin-bottom: 0em;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 1.5em 0;
+        }
+
+        &__actions {
+            font-size: 1.2em;
+        }
+        &__SpecCTA {
+            margin-left: 1.5em;
+            &:after {
+                background: white;
+            }
+        }
+    }
+
+    &__scanner {
+        max-width: 20em;
+        @include flex(1);
+
+        img {
+            width: 100%;
+        }
+    }
+}

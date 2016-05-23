@@ -1,0 +1,35 @@
+.SectionPoints {
+    &__title {
+        font-family: Sintony;
+        font-size: 2em;
+        color: $c-blue;
+        margin: 2em 0;
+        padding: 0 1em;
+        width: 100%;
+        text-align: center;
+
+        span {
+            color: $c-green;
+        }
+    }
+
+    hr {
+        width: 14em;
+        display: block;
+        background: #E0E0E0;
+        border: none;
+        height: 0.2em;
+        border-radius: 0.1em;
+    }
+
+    &__points {
+        margin-top: 4em;
+        max-width: 50em;
+
+        .Point {
+            @include flex-shrink (0);
+            padding: 2em 3em;
+            width: 50%;
+        }
+    }
+}
