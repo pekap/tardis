@@ -6,7 +6,7 @@ html, body {
     font-weight: 400;
     font-size: 16px;
 
-    background: $c-background;
+    background: $c-blue;
 
     @include size(100% 100%);
     @include font-feature-settings("liga", "kern");
@@ -39,6 +39,10 @@ a {
     }
 }
 
+section {
+    background: $c-white;
+}
+
 .Link-with-underline {
     white-space: nowrap;
     color: inherit;
@@ -46,12 +50,12 @@ a {
     position: relative;
     font-weight: 500;
 
-    $c: green;
+    $c: $c-white;
 
     &:after {
         content: "";
         @include position(absolute, null null null null);
-        @include size(100% 0.1em);
+        @include size(100% 0.12em);
         @include transition(all $t-std-duration $t-std-delay $t-std-easing);
 
         @include transform(scale(0,1));

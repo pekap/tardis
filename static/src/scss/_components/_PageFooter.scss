@@ -1,0 +1,22 @@
+.PageFooter {
+    background: $c-blue;
+    color: white;
+    padding: 1em 0;
+
+    &__logo {
+        width: 9em;
+    }
+
+    a, a:visited {
+        color: white;
+    }
+
+    &__contacts {
+        font-size: 1.2em;
+        font-family: Montserrat;
+
+        a+a {
+            margin-top: 0.5em;
+        }
+    }
+}

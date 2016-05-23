@@ -9,7 +9,7 @@
 
             <div class='SectionHero__description__actions fb fb--jc-fs fb--ai-c'>
                 <div class='PrimaryCTA'>Contact Sales</div>
-                <a class='Link-with-underline SectionHero__description__SpecCTA'>Read full specs</a>
+                <a class='Link-with-underline SectionHero__description__SpecCTA' href='#specs'>Read full specs</a>
             </div>
         </div>
         <div class='SectionHero__scanner'>

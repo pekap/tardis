@@ -1,0 +1,18 @@
+.SectionPricing {
+    position: relative;
+    overflow: hidden;
+    padding-top: 6em;
+    &__packages {
+        .Package {
+            max-width: 20em;
+            background: $c-white;
+        }
+    }
+    &:before {
+        content: '';
+        @include position(absolute, 0 null null 0);
+        background: $c-blue;
+        @include size(400% 200%);
+        @include transform(translateY(1em) rotate(-6deg));
+    }
+}

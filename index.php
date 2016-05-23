@@ -8,8 +8,11 @@
 
 <?php include_once ('includes/sections/points.php') ?>
 
-<img src='img/placeholder.png' style='opacity:0.1; width: 100%'/>
+<?php include_once ('includes/sections/pricing.php') ?>
 
+<?php include_once ('includes/sections/specs.php') ?>
+
+<?php include_once ('includes/sections/gallery.php') ?>
 
 <?php include_once ('includes/footer.php') ?>
 

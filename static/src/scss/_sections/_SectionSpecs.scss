@@ -1,0 +1,51 @@
+.SectionSpecs {
+    background: $c-blue;
+    padding-top: 4em;
+
+    h2 {
+        color: $c-white;
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        letter-spacing: 0.03em;
+    }
+
+    &__specs {
+        max-width: 50em;
+        margin: 0 auto;
+        &__spec {
+            width: 30%;
+            color: white;
+            margin-bottom: 1em;
+            h3 {
+                font-family: Sintony;
+                font-weight: bold;
+                opacity: 0.5;
+                margin-bottom: 0.1em;
+                text-transform: uppercase;
+            }
+
+            div {
+
+            }
+        }
+    }
+
+    &__bottom-angle {
+        @include size(100% 11vw);
+        position: relative;
+        overflow: hidden;
+        position: relative;
+        background: $c-white;
+
+        &:before {
+            content: '';
+            @include position(absolute, 0 null null 0);
+            background: $c-blue;
+            @include size(100vw 100vw);
+            @include transform(translateY(-50%) scaleY(0.15) rotate(45deg));
+            border-radius: 2vw;
+        }
+
+    }
+}

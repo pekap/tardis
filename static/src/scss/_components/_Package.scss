@@ -1,0 +1,85 @@
+.Package {
+    position: relative;
+    z-index: 1;
+    padding: 1em 0;
+
+    border: 0.4em solid rgba(0,0,0,0.1);
+
+    h3 {
+        color: rgba(0,0,0,0.3);
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__prices {
+        color: $c-blue;
+        font-size: 1.17em;
+        font-family: Montserrat;
+        font-weight: bold;
+
+        &__price {
+            &--crossed {
+                opacity: 0.3;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    @include position(absolute, 0.7em null null -10%);
+                    @include size(120% 0.15em);
+                    background: $c-blue;
+                }
+            }
+        }
+    }
+
+    &__features {
+        width: 100%;
+        margin-top: 1em;
+
+        &>div, &__feature {
+            width: 100%;
+            margin: 0.3em 0;
+            padding: 0 2em;
+
+            &--not-included {
+                opacity: 0.4;
+            }
+        }
+    }
+
+    &__cta {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: inline-block;
+        border-radius: 10em;
+        background: $c-blue;
+        padding: 0.8em 1.7em;
+        color: $c-white;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        font-family: Montserrat;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+
+        &:hover {
+            background: darken($c-blue, 5%);
+        }
+
+        &:active {
+            background: darken($c-blue, 10%);
+        }
+    }
+
+    &--active {
+        z-index: 2;
+        border: 0.4em solid $c-blue;
+        padding: 2em 0;
+        left: -0.4em;
+        h3 {
+            color: $c-blue;
+        }
+        @extend .Package;
+    }
+}
