@@ -1,0 +1,44 @@
+.SectionSteps {
+    padding: 3em 0;
+
+    &__title {
+        font-family: Sintony;
+        font-size: 2em;
+        color: $c-blue;
+        margin: 2em 0;
+        padding: 0 1em;
+        width: 100%;
+        text-align: center;
+
+        span {
+            color: $c-green;
+        }
+    }
+
+    hr {
+        width: 14em;
+        display: block;
+        background: #E0E0E0;
+        border: none;
+        height: 0.2em;
+        border-radius: 0.1em;
+    }
+
+    &__image {
+        max-width: 20em;
+        margin: 0 4em;
+        @include transform(scaleX(-1));
+    }
+
+    &__steps {
+        margin-top: 3em;
+    }
+
+    &__step {
+        max-width: 21em;
+    }
+
+    &__step + &__step {
+        margin-top: 1em;
+    }
+}

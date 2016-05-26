@@ -13,7 +13,7 @@
             <div class='Point--green'>
                 <div class='Point__icon'><img src='/static/src/img/icons/icon_designer.png' /></div>
                 <h3>Designer Service</h3>
-                <p>Our 3D designers will make any of your customers dreams come true. Head of your customer on the Batman's body? Not a problem! <a class='Link-with-underline'>Read more</a></p>
+                <p>Our 3D designers will make any of your customers dreams come true. Head of your customer on the Batman's body? Not a problem! <a class='Link-with-underline' href='#steps'>Read more</a></p>
             </div>
 
             <div class='Point--purple'>

@@ -8,6 +8,8 @@
 
 <?php include_once ('includes/sections/points.php') ?>
 
+<?php include_once ('includes/sections/steps.php') ?>
+
 <?php include_once ('includes/sections/pricing.php') ?>
 
 <?php include_once ('includes/sections/specs.php') ?>

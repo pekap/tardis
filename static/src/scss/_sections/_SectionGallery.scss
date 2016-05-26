@@ -1,3 +1,60 @@
 .SectionGallery {
-    height: 20em;
+    padding-bottom: 6em;
+    position: relative;
+
+    &__title {
+        font-family: Sintony;
+        font-size: 2em;
+        color: $c-blue;
+        margin: 2em 0;
+        margin-bottom: 1em;
+        padding: 0 1em;
+        width: 100%;
+        text-align: center;
+
+        span {
+            color: $c-green;
+        }
+    }
+
+    hr {
+        width: 14em;
+        display: block;
+        background: #E0E0E0;
+        border: none;
+        height: 0.2em;
+        border-radius: 0.1em;
+        margin-bottom: 3em;
+    }
+
+    &__scans {
+        &:before {
+            content: '';
+            position: absolute;
+            width: 28em;
+            height: 19em;
+            z-index: 0;
+            background: #028CFE;
+            left: 50%;
+            border: 10px solid #028CFE;
+            top: 55%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+
+    &__scan {
+        position: relative;
+        margin: 1em;
+        width: 25em;
+        height: 15em;
+        cursor: pointer;
+        // border: 1em solid #fafafa;
+        box-shadow: 0 0.3em 0.6em rgba(0,0,0,0.3);
+
+        @include transition(0.3s $t-std-easing);
+
+        &:hover {
+            box-shadow: 0 0.4em 1em rgba(0,0,0,0.3);
+        }
+    }
 }
