@@ -31,12 +31,14 @@
         &:before {
             content: '';
             position: absolute;
-            width: 28em;
-            height: 19em;
+            width: 38em;
+            height: 17em;
             z-index: 0;
-            background: #028CFE;
+            //background: #028CFE;
+            //background: #ccc;
+            opacity: 1;
             left: 50%;
-            border: 10px solid #028CFE;
+            //border: 10px solid #028CFE;
             top: 55%;
             transform: translateX(-50%) translateY(-50%);
         }
@@ -45,11 +47,11 @@
     &__scan {
         position: relative;
         margin: 1em;
-        width: 25em;
+        width: 17em;
         height: 15em;
         cursor: pointer;
         // border: 1em solid #fafafa;
-        box-shadow: 0 0.3em 0.6em rgba(0,0,0,0.3);
+        //box-shadow: 0 0.3em 0.6em rgba(0,0,0,0.3);
 
         @include transition(0.3s $t-std-easing);
 

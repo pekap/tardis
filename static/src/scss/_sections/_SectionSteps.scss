@@ -28,6 +28,7 @@
         max-width: 20em;
         margin: 0 4em;
         @include transform(scaleX(-1));
+        margin-right: 0;
     }
 
     &__steps {

@@ -17,7 +17,7 @@
                     <div>Social Media Sharing</div>
                     <div class='Package__features__feature--not-included'>Free downloadable final 3D models</div>
                 </div>
-                <div class='Package__cta'>Contact sales</div>
+                <div name='button-contact-sales' class='Package__cta'>Contact sales</div>
             </div>
             <div class='Package--active fb fb--fd-col fb--ai-c'>
                 <h3>Pro</h3>
@@ -35,7 +35,7 @@
                     <div>Social Media Sharing</div>
                     <div>Free downloadable final 3D models</div>
                 </div>
-                <div class='Package__cta'>Contact sales</div>
+                <div name='button-contact-sales' class='Package__cta'>Contact sales</div>
             </div>
         </div>
     </div>

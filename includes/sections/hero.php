@@ -8,7 +8,7 @@
             </p>
 
             <div class='SectionHero__description__actions fb fb--jc-fs fb--ai-c'>
-                <div class='PrimaryCTA'>Contact Sales</div>
+                <div name='button-contact-sales' class='PrimaryCTA'>Contact Sales</div>
                 <a class='Link-with-underline SectionHero__description__SpecCTA' href='#specs'>Read full specs</a>
             </div>
         </div>

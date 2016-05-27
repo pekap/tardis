@@ -19,3 +19,5 @@
 <?php include_once ('includes/footer.php') ?>
 
 <?php include_once ('includes/foot.php') ?>
+
+<?php include_once ('includes/emailModal.php') ?>
