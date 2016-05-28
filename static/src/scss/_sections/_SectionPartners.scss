@@ -14,4 +14,22 @@
             opacity: 0.7;
         }
     }
+
+    @media (max-width: 700px) {
+        overflow: hidden;
+        .wrap {
+            @include flex-wrap(wrap);
+            @include justify-content(space-around);
+
+            img {
+                padding: 1em 1em;
+                height: 2.5em;
+            }
+
+            & > * {
+                @include flex-shrink (01);
+            }
+        }
+        padding-bottom: 1em;
+    }
 }

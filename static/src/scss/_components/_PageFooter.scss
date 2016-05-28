@@ -21,4 +21,18 @@
             margin-top: 0.5em;
         }
     }
+
+    @media (max-width: 400px) {
+        &__contacts {
+            margin-bottom: 2em;
+        }
+
+        .wrap {
+            @include flex-direction(column-reverse);
+        }
+
+        &__copyright{
+            @include align-items(center);
+        }
+    }
 }

@@ -47,6 +47,32 @@
             @include transform(translateY(-50%) scaleY(0.15) rotate(45deg));
             border-radius: 2vw;
         }
+    }
 
+    @media (max-width: 600px) {
+        h2 {
+            font-size: 1.5em;
+        }
+
+        padding-top: 2em;
+
+        &__specs {
+            @include align-items(flex-start);
+
+            &__spec {
+                width: 50%;
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        &__specs {
+            @include transform(translateX(0em));
+            
+            &__spec {
+                width: 100%;
+                text-align: center;
+            }
+        }
     }
 }

@@ -32,4 +32,22 @@
             width: 50%;
         }
     }
+
+    @media (max-width: 600px) {
+        &__title {
+            font-size: 1.5em;
+
+            span {
+                display: block;
+            }
+        }
+
+        &__points {
+            margin-top: 1em;
+        }
+
+        .Point {
+            width: 100%;
+        }
+    }
 }

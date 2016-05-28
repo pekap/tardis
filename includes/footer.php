@@ -1,6 +1,6 @@
 <footer class='PageFooter'>
     <div class='wrap fb fb--jc-sb fb--ai-c'>
-        <div class='fb fb--fd-col fb--jc-c'>
+        <div class='PageFooter__copyright fb fb--fd-col fb--jc-c'>
             <img class='PageFooter__logo' src='/static/dist/img/tardis_logo_white.png' />
             <div>&copy; 2015-2016 Tardis 3D</div>
         </div>

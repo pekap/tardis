@@ -35,4 +35,18 @@
             opacity: 0.95;
         }
     }
+
+    @media (max-width: 600px) {
+        .wrap {
+            @include flex-direction(column-reverse);
+            @include align-items(center);
+        }
+
+        &__siggraph {
+            display: none;
+            margin-bottom: 1em;
+        }
+
+        padding-top: 1em;
+    }
 }

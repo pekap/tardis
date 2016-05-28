@@ -12,3 +12,13 @@ $s-media-height: 500px;
     margin: 0 auto;
     padding: 0 2em;
 }
+
+section {
+    overflow: hidden;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 0.9em;
+    }
+}
